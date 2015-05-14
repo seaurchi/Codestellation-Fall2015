@@ -1,0 +1,130 @@
+body {
+  overflow-x: hidden;
+  background: white;
+}
+
+h1, h2{
+	font-family: 'Josefin Slab', serif;
+}
+
+h3, p{
+	font-family:'Source Sans Pro', sans-serif;
+}
+
+h1{
+	font-size:7em;
+	color: #1695A3;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 3em;
+	text-align:center;
+}
+
+h3{
+	font-weight: 600;
+	font-size:1em;
+	text-transform: uppercase;
+	letter-spacing: 6.5px;
+}
+
+p{
+	font-size: 1.3em;
+	color: white;
+}
+
+#headerwrap h1{
+	margin-top: 0;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#headerwrap h2{
+	margin-top: 0;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#headerwrap h3{
+	margin-top: 0;
+	margin-bottom:35px;
+	margin-left: 0;
+	margin-right:0;
+}
+
+#headerwrap {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: #001929;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  color: white;
+  margin-top: 200px;
+}
+
+#blurb{
+	text-align:center;
+	margin: 3em 10em;
+	padding: 3em 10em;
+	background-color: #EB7F00;
+}
+
+#blurb h2{
+	color: white;
+	font-size: 3em;
+	font-weight:300;
+	line-height: 120%;
+}
+
+#faq{
+	background-color: #001929;
+	padding: 2em 10em;
+	color: white;
+	font-weight: 100;
+	line-height: 200%;
+}
+
+#schedule{
+	text-align:center;
+	margin: 3em 10em;
+	padding: 3em 10em;
+	background-color: #ACF0F2;
+}
+
+/* buttons! */
+
+.custom-btn{
+	padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+	background:none;
+	border: 2px solid #EB7F00;
+    padding: 12px 22px;
+}
+
+.custom-btn p{
+    font-size:1.5em;
+    font-weight:400;
+    padding-top:0px;
+    padding-bottom:0px;
+    color:#ff9900;
+    margin-bottom: 0px;
+}
+
+.custom-btn:hover{
+    background: #EB7F00;
+    border: 2px solid #EB7F00;
+}
+
+.custom-btn:hover p{
+	color: white;
+}
