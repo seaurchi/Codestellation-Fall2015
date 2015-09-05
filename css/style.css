@@ -7,7 +7,7 @@ h1, h2{
 	font-family: 'Josefin Slab', serif;
 }
 
-h3, p{
+h3, h4, p{
 	font-family:'Source Sans Pro', sans-serif;
 }
 
@@ -20,18 +20,22 @@ h1{
 h2{
 	font-size: 3em;
 	text-align:center;
+  margin: 20px;
 }
 
 h3{
-	font-weight: 600;
+	font-weight: 400;
 	font-size:1em;
 	text-transform: uppercase;
 	letter-spacing: 6.5px;
+  text-align: center;
 }
+
 
 p{
 	font-size: 1.3em;
 	color: white;
+  line-height: 175%;
 }
 
 #headerwrap h1{
@@ -71,44 +75,62 @@ p{
 
 #blurb{
 	text-align:center;
-	margin: 3em 10em;
-	padding: 3em 10em;
+	margin: 2em 4em;
+	padding: 2em 4em;
 	background-color: #EB7F00;
 }
 
 #blurb h2{
 	color: white;
-	font-size: 3em;
 	font-weight:300;
-	line-height: 120%;
 }
 
 #faq{
 	background-color: #001929;
-	padding: 2em 10em;
+	padding: 2em 1em;
 	color: white;
-	font-weight: 100;
-	line-height: 200%;
 }
 
 #schedule{
-	text-align:center;
-	margin: 3em 10em;
-	padding: 3em 10em;
-	background-color: #ACF0F2;
+	padding: 2em 1em;
+	color: #EB7F00;
+	line-height: 200%;
+	background-color: white;
+}
+
+#mentors{
+  background-color: #001929;
+	padding: 2em 1em;
+	color: white;
+}
+
+#map{
+  padding: 2em 1em;
+	color: white;
+	line-height: 200%;
+	background-color: #1695A3;
+}
+
+#footer{
+  background-color:#1695A3;
+  padding: 30px;
+}
+
+#footer h3 {
+  color: #ACF0F2;
 }
 
 /* buttons! */
 
 .custom-btn{
-	padding: 14px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-	background:none;
-	border: 2px solid #EB7F00;
-    padding: 12px 22px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  background:none;
+  border: 2px solid #EB7F00;
+  padding: 12px 22px;
+  margin: 0px 10px;
 }
 
 .custom-btn p{
@@ -127,4 +149,252 @@ p{
 
 .custom-btn:hover p{
 	color: white;
+}
+
+
+@media only screen and (min-width : 320px) {
+  h1{
+    font-size:4em;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  h3{
+    letter-spacing: 3px;
+  }
+
+  p{
+    font-size: 1em;
+  }
+
+  #blurb h2{
+  	font-size: 1.5em;
+  }
+
+  .custom-btn p{
+    font-size:1.2em;
+  }
+
+  #blurb{
+  	margin: 1em 2em;
+  	padding: 1em 2em;
+  }
+
+  .subsection-title {
+    padding-bottom: 10px;
+  }
+
+  .accordion-toggle {
+  	padding: 5px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  h1{
+    font-size:5em;
+  }
+
+  h2{
+    font-size: 3em;
+  }
+
+  h3{
+    letter-spacing: 4px;
+  }
+
+  p{
+    font-size: 1.25em;
+  }
+
+  #blurb h2{
+  	font-size: 1.75em;
+  }
+
+  .custom-btn p{
+    font-size: 1.5em;
+  }
+
+  .subsection-title {
+    padding-bottom: 0px;
+  }
+
+  .accordion-toggle {
+  	padding: 10px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  h1{
+    font-size:6em;
+  }
+
+  h2{
+    font-size: 4em;
+  }
+
+  h3{
+    letter-spacing: 5px;
+  }
+
+  p{
+    font-size: 1.25em;
+  }
+
+  #blurb h2{
+  	font-size: 2em;
+  }
+
+  .custom-btn p{
+    font-size: 2em;
+  }
+
+  #blurb{
+  	margin: 2em 3em;
+  	padding: 2em 3em;
+  }
+
+  .subsection-title {
+    font-size: 3em;
+    padding-bottom: 20px;
+  }
+
+  .accordion-toggle {
+  	padding: 15px;
+  }
+
+  .accordion-content {
+    width: 700px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  h1{
+    font-size: 7em;
+  }
+
+  h2{
+    font-size: 4em;
+  }
+
+  h3{
+    letter-spacing: 5px;
+    font-size: 1.5em;
+  }
+
+  p{
+    font-size: 1.25em;
+  }
+
+  #blurb h2{
+  	font-size: 2.5em;
+  }
+
+  #blurb{
+  	margin: 3em 5em;
+  	padding: 3em 5em;
+  }
+
+  .subsection-title {
+    font-size: 3.5em;
+    padding-bottom: 20px;
+  }
+
+  .accordion-toggle {
+  	padding: 20px;
+  }
+
+  .accordion-content {
+    width: 700px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  h1{
+    font-size: 8em;
+  }
+
+  h2{
+    font-size: 5em;
+  }
+
+  h3{
+    letter-spacing: 5px;
+    font-size: 1.5em;
+  }
+
+  p{
+    font-size: 1.25em;
+  }
+
+  #blurb h2{
+  	font-size: 3em;
+  }
+
+  #blurb{
+  	margin: 3em 6em;
+  	padding: 3em 6em;
+  }
+
+  .overlay {
+    margin-top: 150px;
+  }
+
+  .subsection-title {
+    padding-bottom: 20px;
+    font-size: 4em;
+  }
+}
+
+.accordion-container {
+	width: 100%;
+	margin: 0 0 20px;
+	clear: both;
+}
+
+.accordion-toggle {
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+.accordion-toggle:hover {
+	color: #EB7F00;
+}
+
+.accordion-content {
+	display: none;
+	overflow: auto;
+  padding: 0 50px;
+}
+
+/* media query for mobile */
+@media (max-width: 767px) {
+	.accordion-content {
+		padding: 0 50px;
+		overflow: inherit;
+	}
+}
+
+.footer-icon{
+  margin-top: 15px;
+  padding:10px 10px;
+}
+
+.footer-icon h3 .icon:hover{
+  color: #EB7F00;
+}
+
+.footer-icon h3 .icon {
+  color: white;
+}
+
+.subsection-title{
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
