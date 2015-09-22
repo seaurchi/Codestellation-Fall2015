@@ -99,7 +99,7 @@ p{
 }
 
 #mentors{
-  background-color: #001929;
+  background-color: #1695A3;
 	padding: 2em 1em;
 	color: white;
 }
@@ -108,7 +108,7 @@ p{
   padding: 2em 1em;
 	color: white;
 	line-height: 200%;
-	background-color: #1695A3;
+	background-color: #001929;
 }
 
 #footer{
@@ -131,6 +131,8 @@ p{
   border: 2px solid #EB7F00;
   padding: 12px 22px;
   margin: 0px 10px;
+  border-radius: 0px;
+  height:auto;
 }
 
 .custom-btn p{
@@ -397,4 +399,22 @@ p{
 .subsection-title{
   font-family:'Source Sans Pro', sans-serif;
   font-weight: 600;
+}
+
+#googmap {
+  border-color: #EB7F00;
+  border-width: thick;
+  border-style: solid;
+}
+
+iframe, object, embed{max-width: 100%;}
+
+img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+#vertical-align{
+  margin-top: 6px;
 }

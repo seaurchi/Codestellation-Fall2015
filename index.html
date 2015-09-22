@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Codestellation Fall 2015</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -33,7 +34,6 @@ $(document).ready(function () {
     }
   });
 });
-
 </script>
 
 <body>
@@ -43,13 +43,13 @@ $(document).ready(function () {
 			<h2>Fall 2015</h2>
 			<h3>November 13-15, Brandeis University</h3>
 			<a href="sponsorship_doc.pdf"><button class="custom-btn"><p>sponsor us</p></button></a>
-      <!-- <a href=""><button class="custom-btn"><p>register</p></button></a> -->
+      <a href="http://www.eventbrite.com/e/codestellation-fall-2015-tickets-18742828304"><button class="custom-btn"><p>register</p></button></a>
 		</div>
 		<canvas id="myCanvas" height="700"></canvas>
 	</div>
 
-	<!-- <div id="blurb">
-		<h2>Last March, programmers of all different skill levels and backgrounds collaborated on amazing software at the first Codestellation. This fall, we're bringing you back onto the launch pad for a second mission that's bigger and better than ever. Get ready to hack the galaxy!
+	<div id="blurb">
+		<h2>Last March, programmers of all different skill levels and backgrounds collaborated on amazing software and hardware at the first Codestellation. This fall, we're bringing you back onto the launch pad for a second mission. Get ready to hack the galaxy!
 		</h2>
 	</div>
 
@@ -88,19 +88,48 @@ $(document).ready(function () {
 
 	<div id="schedule">
     <h2 class="subsection-title">Schedule</h2>
+    <h3>coming soon!</h3>
 	</div>
 
   <div id="mentors">
     <h2 class="subsection-title">Mentors</h2>
+    <h3>coming soon!</h3>
   </div>
 
 	<div id="map">
     <h2 class="subsection-title">How To Get Here</h2>
+    <div class="container">
+      <div class="row">
+        <div class="eight columns">
+          <iframe width="600"
+          height="450"
+          id="googmap"
+          src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJKyNuvJ1w44kRBE-pe_yDhj8&destination=shapiro%20science%20center%20&key=AIzaSyDUS3bGrrW2_xfd_iJiwaBShWnBDfFmIFY"
+          allowfullscreen></iframe>
+        </div>
+        <div class="four columns">
+          <p>Codestellation will be held in the Shapiro Campus Center at Brandeis University in Waltham, MA. While we are not able to provide transportation from other schools, Brandeis is easily accessible either by the commuter rail on the Fitchburg-South Acton line (get off at the Brandeis stop, not the Waltham one!) or by the 70 and 553 buses. Depending on interest, we may be able to send a bus from Wellesley/Olin, so let us know if this would help you out!</p></div>
+      </div>
+    </div>
 	</div>
 
 	<div id="sponsors">
     <h2 class="subsection-title">Sponsored By</h2>
-	</div> -->
+    <div class="container">
+      <div class="row">
+        <div class="five columns offset-by-two">
+          <center>
+          <img src="images/intrepid.png">
+          </center>
+        </div>
+        <div class="three columns">
+          <center>
+          <a href="sponsorship_doc.pdf"><button id="vertical-align" class="custom-btn"><p>+you?</p></button></a>
+          <center>
+        </div>
+      </div>
+    </div>
+	</div>
 
 	<div id="footer">
     <h3>Made with <i class="icon icon-rocket"></i> by BITMAP</h3>
