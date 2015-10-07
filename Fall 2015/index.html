@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Codestellation Fall 2015</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+    <script src="https://use.fonticons.com/146de994.js"></script>
+  </head>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  $('.accordion-toggle').on('click', function(event){
+    event.preventDefault();
+    // create accordion variables
+    var accordion = $(this);
+    var accordionContent = accordion.next('.accordion-content');
+    var accordionToggleIcon = $(this).children('.toggle-icon');
+
+    // toggle accordion link open class
+    accordion.toggleClass("open");
+    // toggle accordion content
+    accordionContent.slideToggle(250);
+
+    // change plus/minus icon
+    if (accordion.hasClass("open")) {
+      accordionToggleIcon.html("<i class='icon icon-caret-down'></i>");
+    } else {
+      accordionToggleIcon.html("<i class='icon icon-caret-up'></i>");
+    }
+  });
+});
+</script>
+
+<body>
+	<div id = "headerwrap">
+		<div class="overlay">
+			<h1>Codestellation</h1>
+			<h2>Fall 2015</h2>
+			<h3>November 14-15, Brandeis University</h3>
+      <a href="http://www.eventbrite.com/e/codestellation-fall-2015-tickets-18742828304"><button class="custom-btn"><p>register</p></button></a>
+			<a href="sponsorship_doc.pdf"><button class="custom-btn"><p>sponsor us</p></button></a>
+		</div>
+		<canvas id="myCanvas" height="700"></canvas>
+	</div>
+
+	<div id="blurb">
+		<h2>Last March, programmers of all different skill levels and backgrounds collaborated on amazing software and hardware at the first Codestellation. This fall, we're bringing you back onto the launch pad for a second mission. Get ready to hack the galaxy!
+		</h2>
+	</div>
+
+	<div id="faq">
+		<h2 class="subsection-title">FAQ</h2>
+
+    <center>
+    <div id="accordion-container">
+      <h3 class="accordion-toggle">A Hacka-What? <span class="toggle-icon"><i class="icon icon-caret-up"></i></span></h3>
+      <div class="accordion-content default">
+        <p>A hackathon is an opportunity to get together with others who share your passion for building and creating technology for a weekend and create something great. That app you’ve been talking about making forever? That software that would really make school that much easier? This is the perfect opportunity to sit down and make it a reality. At Codestellation, you’ll join a small launch team to create something awesome over the course of 24 hours. Along the way, we’ve also got a bunch of fun activities planned just in case you need a break from all the coding you’ll be doing. If a weekend of making new friends, coding, and partaking in all sorts of fun activities sounds like a blast to you, join us for Codestellation Fall 2015!
+        </p>
+      </div>
+      <h3 class="accordion-toggle">Who Can Attend? <span class="toggle-icon"><i class="icon icon-caret-up"></i></span></h3>
+      <div class="accordion-content">
+        <p>Any college student older than 18 is invited to attend this event. We want to fill the halls with a diverse group of interesting hackers with a variety of different skills, attributes, strengths, and perspectives. If you don’t have a team, we can help you find one- all you have to do is indicate on the registration form that you would like to be placed with a team, and we will put you in contact with other hackers both prior to and at the start of the event. New hackers are absolutely encouraged to attend; if you’ve been waiting for a sign to tell you that you’re good enough to go to a hackathon, this is it!
+        </p>
+      </div>
+      <h3 class="accordion-toggle">When Is This Happening? <span class="toggle-icon"><i class="icon icon-caret-up"></i></span></h3>
+      <div class="accordion-content">
+        <p>Codestellation will be the weekend of November 13-15, 2015.</p>
+      </div>
+      <h3 class="accordion-toggle">Where Is This Happening? <span class="toggle-icon"><i class="icon icon-caret-up"></i></span></h3>
+      <div class="accordion-content">
+        <p>Codestellation will take place at Brandeis University (in Waltham, MA) in the Shapiro Science Center. We will be sending out detailed directions as well as a map in an email to participants closer to the event date. Unfortunately we will be unable to provide transportation reimbursements, but Brandeis is conveniently located right on the Fitchburg-South Acton Line of the MBTA, making transportation from other Boston schools extremely easy.
+        </p>
+      </div>
+      <h3 class="accordion-toggle">What Should I Bring? <span class="toggle-icon"><i class="icon icon-caret-up"></i></span></h3>
+      <div class="accordion-content">
+        <p>You will definitely need to bring a laptop or some other device to code on. As this is an overnight hackathon, you might thank yourself in the morning if you bring a toothbrush and a towel to wash your face. If this is your first time hacking, consider bringing a pillow and a sleeping bag – it makes a world of difference to be coding when you’re well-rested and energized. Other than basic necessities like that, we’ve got you covered: we will be providing all the snacks and food you could eat, a Codestellation t-shirt, lots of hardware, 3D printers, and monitors for all your coding needs.
+        </p>
+      </div>
+    </div>
+    </center>
+	</div>
+
+	<div id="schedule">
+    <h2 class="subsection-title">Schedule</h2>
+    <h3>coming soon!</h3>
+	</div>
+
+  <div id="mentors">
+    <h2 class="subsection-title">Mentors</h2>
+    <h3>coming soon!</h3>
+  </div>
+
+	<div id="map">
+    <h2 class="subsection-title">How To Get Here</h2>
+    <div class="container">
+      <div class="row">
+        <div class="eight columns">
+          <iframe width="600"
+          height="450"
+          id="googmap"
+          src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJKyNuvJ1w44kRBE-pe_yDhj8&destination=shapiro%20science%20center%20&key=AIzaSyDUS3bGrrW2_xfd_iJiwaBShWnBDfFmIFY"
+          allowfullscreen></iframe>
+        </div>
+        <div class="four columns">
+          <p>Codestellation will be held in the Shapiro Campus Center at Brandeis University in Waltham, MA. While we are not able to provide transportation from other schools, Brandeis is easily accessible either by the commuter rail on the Fitchburg-South Acton line (get off at the Brandeis stop, not the Waltham one!) or by the 70 and 553 buses. Depending on interest, we may be able to send a bus from Wellesley/Olin, so let us know if this would help you out!</p></div>
+      </div>
+    </div>
+	</div>
+
+	<div id="sponsors">
+    <h2 class="subsection-title">Sponsored By</h2>
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <center>
+          <img src="images/intrepid.png">
+          </center>
+        </div>
+        <div class="four columns">
+          <center>
+          <img src="images/estimote.png">
+          </center>
+        </div>
+        <div class="four columns">
+          <center>
+          <a href="sponsorship_doc.pdf"><button id="vertical-align" class="custom-btn"><p>+you?</p></button></a>
+          <center>
+        </div>
+      </div>
+    </div>
+	</div>
+
+	<div id="footer">
+    <h3>Made with <i class="icon icon-rocket"></i> by BITMAP</h3>
+    <div class="footer-icon">
+      <h3>
+        <a href="mailto:codestellation@gmail.com"><i class="icon icon-envelope-o icon-lg" ></a></i>
+        <a href="https://twitter.com/codestellation"><i class="icon icon-twitter icon-lg"></a></i>
+        <a href="https://www.facebook.com/codestellation"><i class="icon icon-facebook icon-lg"></a></i>
+      </h3>
+    </div>
+	</div>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
+	<script src="js/constellation.js"></script>
+
+</body>
+</html>
